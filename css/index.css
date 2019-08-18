@@ -135,6 +135,10 @@ html {
 html,
 body {
   font-family: 'Roboto', sans-serif;
+  color: #212529;
+}
+a {
+  color: #212529;
 }
 h1,
 h2,
@@ -142,6 +146,7 @@ h3,
 h4,
 h5 {
   font-family: 'Indie Flower', cursive;
+  color: #212529;
 }
 h1 {
   font-size: 4rem;
@@ -170,18 +175,43 @@ img {
 }
 header {
   display: flex;
+  padding: 15px;
+}
+header .title {
+  width: 25%;
+  padding-top: 5px;
+  border: 1px solid red;
 }
 header nav {
+  width: 75%;
+  font-size: 1.6rem;
+  display: flex;
   justify-content: flex-end;
+  align-items: center;
+  border: 1px solid green;
 }
-header a {
+header nav a {
+  padding: 15px;
   text-decoration: none;
+}
+.main-container {
+  width: 97%;
+  margin-left: 1.6%;
+  border-top: 1px dashed #C0C0C0;
+}
+.top-content {
+  display: flex;
+}
+.top-content img {
+  margin-bottom: 20px;
+  border: 1px solid blue;
 }
 .content-section {
   display: flex;
 }
 .content-destination {
   display: flex;
+  flex-direction: column;
 }
 .content-pick {
   display: flex;
