@@ -190,7 +190,6 @@ header .title {
   header .title {
     width: 100%;
     text-align: center;
-    border: 1px solid green;
   }
   header .title h1 {
     font-size: 3rem;
@@ -202,7 +201,6 @@ nav {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  border: 1px solid purple;
 }
 nav a {
   padding: 15px;
@@ -229,7 +227,6 @@ nav a {
 @media (max-width: 500px) {
   .home {
     width: 100%;
-    border: 1px solid blue;
   }
 }
 .home .main-container {
@@ -293,6 +290,7 @@ nav a {
 }
 @media (max-width: 500px) {
   #backwards {
+    flex-direction: column-reverse;
     width: 100%;
     margin: 0;
   }
@@ -335,8 +333,6 @@ nav a {
     flex-direction: column;
     width: 80%;
     margin: 0 auto;
-    border: 1px dashed purple
-      ;
   }
 }
 button {
