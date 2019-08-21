@@ -243,9 +243,11 @@ nav a {
 .home .top-content img {
   margin-bottom: 20px;
 }
+.home .top-border {
+  border-bottom: 2px dashed #C0C0C0;
+}
 @media (max-width: 500px) {
   .home .top-border {
-    border-bottom: 2px dashed #C0C0C0;
     padding-bottom: 15px;
   }
 }
@@ -284,22 +286,22 @@ nav a {
 .home .img-content img {
   border-radius: 10px;
 }
-.inverse-content {
+#backwards {
+  display: flex;
   padding-bottom: 30px;
   border-bottom: 2px dashed #C0C0C0;
 }
 @media (max-width: 500px) {
-  .inverse-content {
-    /* START HERE */
+  #backwards {
     width: 100%;
     margin: 0;
   }
 }
-.inverse-content .text-content {
+.text-content {
   padding-left: 1%;
   padding-right: 0;
 }
-.inverse-content .img-content {
+.img-content {
   padding-right: 1%;
   padding-left: 0;
 }
@@ -310,11 +312,32 @@ nav a {
 .content-destination img {
   border-radius: 10px;
 }
+@media (max-width: 500px) {
+  .content-destination {
+    width: 100%;
+    margin: 20px 0;
+  }
+}
+.divider {
+  width: 100%;
+  text-align: center;
+  height: 0;
+  border-top: 2px dashed #C0C0C0;
+  font-size: 0;
+}
 .content-pick {
   padding-top: 30px;
-  border-top: 2px dashed #C0C0C0;
   display: flex;
   justify-content: space-between;
+}
+@media (max-width: 500px) {
+  .content-pick {
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+    border: 1px dashed purple
+      ;
+  }
 }
 button {
   color: #FFFFFF;
@@ -326,7 +349,17 @@ button {
   font-size: 1.8rem;
   font-family: 'Roboto', sans-serif;
 }
+@media (max-width: 500px) {
+  button {
+    width: 100%;
+  }
+}
 .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+@media (max-width: 500px) {
+  .destination {
+    width: 100%;
+  }
 }
