@@ -1,21 +1,54 @@
 .home {
+  @media @mobile {
+    width: 100%;
+  }
+
+  .main-container {
+    width: 97%;
+    margin-left: 1.6%;
+    border-top: 1px dashed @navigation-border;
+  }
+    
+    .top-content {
+      display: flex;
+      img {
+          margin-bottom: 20px;
+      }
+    }
+      .top-border {
+        border-bottom: 2px dashed @navigation-border;
+        @media @mobile {
+          padding-bottom: 15px;
+        }
+    }
 
   .content-section {
     margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    @media @mobile {
+      flex-direction: column;
+      width: 100%;
+      margin: 0;
+    }
 
-   
-    
-    .text-content {
-      width: 48%;
-      padding-right: 1%;
+      .text-content {
+        width: 48%;
+        padding-right: 1%;
+        @media @mobile {
+          width: 100%;
+          padding-top: 15px;
+        }
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+      @media @mobile {
+        width: 100%;
+      }
 
       img {
         border-radius: 10px;
@@ -23,9 +56,16 @@
     }
   }
 
-  .inverse-content {
+  #backwards {
+    display: flex;
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
+    @media @mobile {
+      flex-direction: column-reverse;
+      width: 100%;
+      margin: 0;
+      }
+    }
 
     .text-content {
       padding-left: 1%;
@@ -36,7 +76,7 @@
       padding-right: 1%;
       padding-left: 0;
     }
-  }
+  
 
   .content-destination {
     width: 75%;
@@ -45,17 +85,51 @@
     img {
       border-radius: 10px;
     }
+
+    @media @mobile {
+      width: 100%;
+      margin: 20px 0;
+    }
   }
+
+.divider {
+  width: 100%;
+  text-align: center;
+  height: 0;
+  border-top: 2px dashed @navigation-border;
+  font-size: 0;
+}
 
   .content-pick {
     padding-top: 30px;
-    border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
+    @media @mobile {
+      flex-direction: column;
+      width: 80%;
+      margin: 0 auto;
+    }
+    }
+      button {
+        .button(@font-color; @button-bg);
+        width: 90%;
+        padding: 10px;
+        border: none;
+        border-radius: 10px;
+        font-size: 1.8rem;
+        font-family: 'Roboto', sans-serif;
+        @media @mobile {
+          width: 100%;
+        }
+      }
 
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      @media @mobile {
+        width: 100%;
+      }
     }
-  }
-}// home
+  
+// home
+
