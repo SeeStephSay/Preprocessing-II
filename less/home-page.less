@@ -6,7 +6,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
-   
+  
     
     .text-content {
       width: 48%;
@@ -56,6 +56,17 @@
     .destination {
       width: 30%;
       margin-bottom: 30px;
+        button {
+          .button(@main-bg; @button-bg; 10px);
+            border-style: none;
+            padding: 10px;
+            width: 85%;
+            font-size: 1.8rem;
+            font-family: 'Roboto', sans-serif;
+          @media @mobile {
+            width: 100%;
+        }
+      }
     }
   }
 }// home
